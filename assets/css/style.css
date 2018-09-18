@@ -1,0 +1,17 @@
+img {
+    height: 70px;
+    width: 70px;
+    padding: 5px
+}
+
+body{
+    background: lightslategrey
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 42px;
+    background-color: black;
+    border: 2px solid aqua;
+}
+
