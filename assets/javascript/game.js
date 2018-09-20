@@ -25,7 +25,7 @@ var stoneValue = ($("#stone").attr("stone-value"))
     console.log(stoneValue)
 
 
-var images = ["assets/images/blue-stone2.jpg", "assets/images/green-stone2.jpg", "assets/images/purple-stone2.jpg", "assets/images/red-stone2.jpg", ]
+var images = ["assets/images/rock-crystal-397955_1920.jpg", "assets/images/crystal-2723145_1920.jpg", "assets/images/amethyst-265347_1920.jpg", "assets/images/gem-3373541_1920.jpg", ]
 
 function stoneNumber(){
 
