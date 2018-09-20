@@ -8,45 +8,92 @@
     <title>Crystal Game</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 
 </head>
 
 <body>
 
-<h1 id="game-header"> Crystal Collecter </h1>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-12" id="game-header"> Crystal Collecter </h1>
+        </div>
+        <div class="row">
+            <div class="col-12" id="rules">
+                <!-- rules go here-->
+                <h3> The Rules</h3>
+                <br>
 
-<div id= "guess"></div> <!-- number to guess-->
+                <p>
+                    At the start of the game you will be given a random number.
+                </p>
+                <p>
+                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your total output.
+                </p>
+                <p>
+                    To win the game, match your total output to the random number, you lose the game if your total output
+                    goes above the random number.
+                </p>
+                <p>
+                    The value of each crystal is hidden from you until you click on it.
+                </p>
+                <p>
+                    The values of each crystal will charge at the start of a new game.
+                </p>
+            </div>
+        </div>
+        <div class=" row">
 
-<div id="wins"></div> <!-- wins-->
-<div id= "losses"></div> <!-- losses-->
-<div id="stone"></div>
-<div id="guess-counter"></div>
+            <div id="guess" class="output "></div> <!-- number to guess-->
+
+            <div class="output ">
+                <div id="wins"></div> <!-- wins-->
+                <div id="losses"></div> <!-- losses-->
+            </div>
+
+            <div id="guess-counter" class="output2 "></div>
+       
+
+        </div>
+        <div class="row ">
+            <div id="stone"></div>
+        </div>
+    </div>
 
 
-<div>
-<!--- images connected to on click event
+
+
+    <div>
+        <!--- images connected to on click event
 <img src="assets/images/blue-stone.jpg" id="stone" alt="Blue Stone"> 
 <img src="assets/images/green-stone.jpg" id="stone" alt="Green Stone"> 
 <img src="assets/images/purple-stone.jpg" id="stone" alt="Purple Stone"> 
 <img src="assets/images/red-stone.jpg" id="stone" alt="Red Stone"> 
 -->
-</div>
+    </div>
 
-<div id="test"></div>
-
-
+    <div id="test"></div>
 
 
 
 
 
 
-<!-- jQuery -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
-<!-- Script -->
-<script src="assets/javascript/game.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Script -->
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
