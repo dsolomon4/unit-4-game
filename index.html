@@ -18,24 +18,23 @@
 
     <div class="container">
         <div class="row">
-            <header class="col-12" id="game-header" style="color: white; font-family: 'Dancing Script', cursive;"> The Crystal Collecter </header>
+            <header class="col-12" id="game-header" style="color: white; font-family: 'Dancing Script', cursive;"> The
+                Crystal Collecter </header>
         </div>
         <div class="row">
             <div class="col-12" id="rules">
                 <!-- rules go here-->
-                <h3> The Rules</h3>
-                <br>
+                <h4> The Rules</h4>
 
                 <p>
                     At the start of the game you will be given a random number.
                 </p>
                 <p>
-                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to
-                    your total output.
+                    By clicking on a crystal you will add a specific amount of points to
+                    your total score.
                 </p>
                 <p>
-                    To win the game, match your total output to the random number, you lose the game if your total
-                    output
+                    To win the game, match your total score to the random number, you lose the game if your score
                     goes above the random number.
                 </p>
                 <p>
@@ -47,15 +46,17 @@
             </div>
         </div>
         <div class=" row">
+            <div class="output">This is your random number:
+                <div id="guess"></div> <!-- number to guess-->
+            </div>
 
-            <div id="guess" class="output "></div> <!-- number to guess-->
-
-            <div class="output ">
+            <div class="output ">Your score:
+                <div id="guess-counter"></div>
+            </div>
+            <div class="output2 ">
                 <div id="wins"></div> <!-- wins-->
                 <div id="losses"></div> <!-- losses-->
             </div>
-
-            <div id="guess-counter" class="output2 "></div>
 
 
         </div>

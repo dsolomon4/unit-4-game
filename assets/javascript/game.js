@@ -6,21 +6,24 @@ $(document).ready(function(){
 //The random number shown at the start of the game should be between 19 - 120.
 var guessNumber = Math.floor(Math.random() * 102) + 19;
 console.log(guessNumber)
-$("#guess").text("This is your random number: " + guessNumber) //connected to html
+$("#guess").text(guessNumber) //connected to html
 
 
 // var keepnig count of the score and display
 var wins = 0;
 var loss = 0;
-$("#wins").text("you have " + wins + " wins.")
-$("#losses").text("you have " + loss + " losses.")
+$("#wins").text("You have " + wins + " wins.")
+$("#losses").text("You have " + loss + " losses.")
 
 // var for holding the score while adding, and score box
 var guessCounter = 0;
-$("#guess-counter").text("Your score: " + guessCounter)
+$("#guess-counter").text(guessCounter)
 
 // varible array for images
-var stoneValue = 0;
+var stoneValue = ($("#stone").attr("stone-value"))
+    stoneValue = parseInt(stoneValue);
+    console.log(stoneValue)
+
 
 var images = ["assets/images/blue-stone.jpg", "assets/images/green-stone.jpg", "assets/images/purple-stone.jpg", "assets/images/red-stone.jpg", ]
 
@@ -68,7 +71,7 @@ function winner() {
     //When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
     guessCounter += stoneValue 
 
-    $("#guess-counter").text("Your score: " + guessCounter)
+    $("#guess-counter").text(guessCounter)
     //if the numbers added is less than guessNumber, continue to add
     // when correct number is guessed, show message "You win!"
     //when incorrect number is guessed, show message "You lose!"
